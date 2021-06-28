@@ -1,6 +1,4 @@
 import openai
-import pandas as pd
-import numpy as np
 import streamlit as st
 
 openai.api_key = st.write(st.secrets["SECRET_KEY"]) 
