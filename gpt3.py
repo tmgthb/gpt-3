@@ -1,7 +1,7 @@
 import openai
 import streamlit as st
 
-openai.api_key = st.write(st.secrets["SECRET_KEY"]) 
+openai.api_key = st.secrets["SECRET_KEY"]
 response = openai.Completion.create(engine="davinci", prompt="I expect", max_tokens=5)
 
 st.text(response["choices"][0]["text"])
